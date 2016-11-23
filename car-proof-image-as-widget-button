@@ -1,0 +1,23 @@
+/* style carProogLogoBtn inside quick pop up widget */
+
+img#carProofLogoBtn {
+    width: calc(50% - 10px);
+    height: 49px;
+    margin: 10px 10px 0 0;
+    background-color: #7f848a;
+    float: left;
+    background-image: url(https://s3-us-west-1.amazonaws.com/blueprint-cdn.searchoptics.com/650e0091d55de9f89c1aef79993b7056/Inventory/car_proof_logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: -99999px 99999px;
+}
+
+@media only screen and (max-width: 639px) {
+  img#carProofLogoBtn {
+      width: 100%;
+      margin-right: 0;
+  }
+}
+
+/* jQuery*/
+$('#carProofLogoBtn').prependTo('.vehicleQuickPopupsWidget');
