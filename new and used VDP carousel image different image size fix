@@ -1,0 +1,9 @@
+#imageDisclosure {
+  margin-bottom: 30%;
+}
+
+@media (max-width: 767px)
+  #imageDisclosure {
+    margin-bottom: 30%;
+  }
+}
