@@ -1,0 +1,9 @@
+button.mfp-close {
+    width: auto;
+    font-size: 28px;
+    padding: 2px 5px;
+}
+
+button.mfp-close:before {
+    content: 'Close ';
+}
