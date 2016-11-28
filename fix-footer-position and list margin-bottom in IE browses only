@@ -1,0 +1,9 @@
+
+<!--[if IE]>
+    $('footer').appendTo('.container');
+    setTimeout( function(){ 
+    	$('.footer .row .footer-nav > li').attr('style','margin-bottom: 39px ');
+  	}  , 1000 );
+<![endif]-->
+
+https://raw.githubusercontent.com/josefzacek/SO-Tips/master/Capture.PNG
