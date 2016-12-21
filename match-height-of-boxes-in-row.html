@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Match height of boxes in a row</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+    /* iframe style */
+    .iframe-rwd  {
+      position: relative;
+      padding-top: 0;
+      height: 0;
+      overflow: hidden;
+      height: 700px;
+    }    
+    .iframe-rwd iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none !important;
+      height: 700px !important;
+    }
+    /* boxes */
+    .first-box {
+      border-bottom: 5px solid #0c0cdd;
+    }
+    .middle-box {
+      border-bottom: 5px solid #1cdd50;
+    }
+    .highest-box {
+      border-bottom: 5px solid #f50937;
+    }
+    .middle-box, .highest-box {
+      padding-bottom: 50px;
+    }
+    /* buttons */
+    a.btn.btn-primary.form-control {
+      position: absolute;
+      left: 20px;
+      width: calc(100% - 40px);
+      bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Match height of boxes in a row</h2>
+  </div>
+</div>
+  
+<div class="container-fluid">    
+  <div class="row">
+   <div class="col-md-4 first-box">
+     <div class="iframe-rwd">
+       <a class="reputation-widget" target="_blank" href="https://widgets.reputation.com/widgets/56cde56ce4b0f58198618da3/run?tk=48b3951bd18" data-tk="48b3951bd18" data-widget-id="56cde56ce4b0f58198618da3" data-lk="B2561">Reputation Reviews</a>
+     </div>
+   </div>
+   <div class="col-md-4 middle-box">
+     <h3 class="text-center">Responsive image</h3>
+     <img src="https://imgct2.aeplcdn.com/img/800x600/car-data/big/skoda-octavia-default-image.png-version2016093012.png" class="img-responsive center-block" alt="Skoda">
+     <p><a href="#" class="btn btn-primary form-control">Full-Width Button</a></p>
+   </div>
+   <div class="col-md-4 highest-box">
+     <h3 class="text-center">Plenty of text</h3>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores a assumenda labore suscipit accusantium nesciunt reprehenderit nostrum, architecto aut error pariatur hic sapiente velit nemo porro dolores, maiores quia blanditiis tenetur esse animi! Qui, voluptatem amet! Quibusdam ullam nobis ducimus praesentium perspiciatis tempora laborum vitae explicabo obcaecati reprehenderit necessitatibus dolorem expedita, recusandae earum. Cum, consequuntur eos ut doloremque eveniet praesentium iusto voluptatibus hic, voluptatem vel magni perferendis similique, nisi sapiente recusandae assumenda quis fugit! Odio, delectus dicta voluptates, porro aspernatur soluta unde exercitationem itaque optio id illum expedita! Consectetur hic ex expedita impedit repellat fuga vel provident ipsa, dolorem, a voluptatum suscipit. Optio facere beatae ad adipisci sequi, ullam officia explicabo consectetur maxime hic, facilis consequuntur inventore quasi eligendi. Natus autem, explicabo quos, reiciendis culpa consequuntur. Sed quod natus placeat voluptatibus asperiores ad animi ipsum quibusdam officia esse tempora doloribus doloremque harum quia aspernatur voluptate recusandae iure cum excepturi minus quam, provident. Praesentium, aperiam, asperiores! Commodi quia veritatis eos? Debitis nemo dolor accusamus eius rerum sunt veniam, commodi dolorem tempore explicabo corporis at vero aut, recusandae, aliquam voluptatibus deserunt. Unde ducimus ipsum reprehenderit mollitia.</p>
+     
+     <p><a href="#" class="btn btn-primary form-control">Full-Width Button</a></p>
+     
+   </div>
+  </div>
+</div>
+<br>
+<br>
+
+
+<footer class="container-fluid">
+  <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+</footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- reviews widget js -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://widgets.reputation.com/src/client/widgets/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","reputation-wjs");</script>
+  
+  <script>
+    /* match height of all boxes with height of highest box */ 
+    $(window).on('resize', function(){
+      if ($(window).width() > 991) {
+        var boxHeight = $('.highest-box').innerHeight();
+        $('.iframe-rwd').css('height', boxHeight);
+        $('.middle-box').css('height', boxHeight + 5);
+      } else {
+        $('.iframe-rwd, .middle-box').removeAttr('style');
+      }
+    });
+    
+    $(window).on('load', function(){
+      if ($(window).width() > 991) {
+        var boxHeight = $('.highest-box').innerHeight();
+        $('.iframe-rwd').css('height', boxHeight);
+        $('.middle-box').css('height', boxHeight + 5);
+      }
+    });
+
+  </script>
+
+</body>
+</html>
