@@ -1,0 +1,21 @@
+/* open and close mobile subnavigation on click */
+
+$('li.dropdown').click(function(){
+	if ($(window).width() < 768) {
+		if ($(this).children("ul.dropdown-menu").css('display') == 'block'){
+			$("ul.dropdown-menu").removeAttr("style");
+		} else {
+			$("ul.dropdown-menu").removeAttr("style");
+			$(this).children("ul.dropdown-menu").css('display', 'block');
+		}
+	}
+});
+
+function mobileNavigation() {
+  if ($(window).width() < 768) {
+	$("ul.dropdown-menu").removeAttr("style");
+  }
+}
+
+$(document).ready(mobileNavigation);
+$(window).resize(mobileNavigation);
