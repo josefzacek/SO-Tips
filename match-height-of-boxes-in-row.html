@@ -4,6 +4,7 @@
   <title>Match height of boxes in a row</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -52,6 +53,10 @@
       width: calc(100% - 40px);
       bottom: 10px;
     }
+    /* show window width */
+    .window-width {
+      color: #ff0000;
+    }
   </style>
 </head>
 <body>
@@ -59,6 +64,7 @@
 <div class="jumbotron">
   <div class="container text-center">
     <h2>Match height of boxes in a row</h2>
+    <h3>Current window width is <span class="window-width"></span></h3>
   </div>
 </div>
   
@@ -124,6 +130,18 @@
       }
     });
 
+    /* show window width on load */
+    $(window).on('load', function(){
+      var windowWidth = $(window).width();
+      $('.window-width').text(windowWidth);
+    });
+    
+    /* show window width on resize */
+    $(window).on('resize', function(){
+        var windowWidth = $(window).width();
+        $('.window-width').text(windowWidth);
+      });
+    
   </script>
 
 </body>
