@@ -123,6 +123,12 @@
       }
     });
 
+    /* show window width on load */
+    $(window).on('load', function(){
+      var windowWidth = $(window).width();
+      $('.window-width').text(windowWidth);
+    });
+    
   </script>
 
 </body>
