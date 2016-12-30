@@ -129,6 +129,12 @@
       $('.window-width').text(windowWidth);
     });
     
+    /* show window width on resize */
+    $(window).on('resize', function(){
+        var windowWidth = $(window).width();
+        $('.window-width').text(windowWidth);
+      });
+    
   </script>
 
 </body>
