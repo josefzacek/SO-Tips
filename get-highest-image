@@ -1,0 +1,11 @@
+setTimeout(function checkImagesHeight() {
+  var highestImage = 0;
+
+  $('.image img.img-responsive').each(function() {
+    var imageHeight = $(this).height();
+    if (imageHeight > highestImage) {
+      highestImage = imageHeight;
+    }
+  });
+  $('.special .image').css('height', highestImage);
+}, 500);
