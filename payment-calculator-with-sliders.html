@@ -132,6 +132,13 @@
       $('#loan-terms-block label').removeClass('active');
       $(this).addClass('active');
     });
+    
+    // highlight clicked button in repayments
+    $('#repayments-block label').click(function(){
+      $('#repayments-block label').removeClass('active');
+      $(this).addClass('active');
+    });
+    
     var accessoriesValue = $('#accessories-value');
     $("#accessories-slider").slider({ 
       max: 20000,
