@@ -49,6 +49,15 @@
         exchangeValue.html(ui.value);
       }
     });
+
+    var valueExchangeValue = $('#value-exchange-value');
+    $("#value-exchange-slider").slider({ 
+      max: 100000,
+      min: 0,
+      slide: function(event, ui) {
+        valueExchangeValue.html(ui.value);
+      }
+    });
   </script>
 </body>
 </html>
