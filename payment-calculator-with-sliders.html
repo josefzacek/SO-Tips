@@ -184,6 +184,21 @@
         interestRateValue.html(ui.value);
       }
     });
+    
+    // get values from form
+    $('form#calculator-form').on("submit", function(event) {
+      event.stopPropagation();
+      event.preventDefault();
+      var loanTermMonths = $('form#calculator-form').find('#loan-terms-block input:checked').val();
+      var accesories = $('form#calculator-form').find('#accessories-value').text();
+      var exchange = $('form#calculator-form').find('#exchange-value').text();
+      var valueExchange = $('form#calculator-form').find('#value-exchange-value').text();
+      var initialPayment = $('form#calculator-form').find('#initial-payment-value').text();
+      var interestRate = $('form#calculator-form').find('#interest-rate-value').text();
+      var repayments = $('form#calculator-form').find('#repayments-block input:checked').val();
+
+      console.log(loanTermMonths + ' ' + accesories + ' ' + exchange + ' ' + valueExchange + ' ' + initialPayment + ' ' + interestRate + ' ' + repayments)
+    });
   </script>
 </body>
 </html>
