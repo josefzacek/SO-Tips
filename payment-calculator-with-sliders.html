@@ -40,6 +40,15 @@
         accessoriesValue.html(ui.value);
       }
     });
+
+    var exchangeValue = $('#exchange-value');
+    $("#exchange-slider").slider({ 
+      max: 100000,
+      min: 0,
+      slide: function(event, ui) {
+        exchangeValue.html(ui.value);
+      }
+    });
   </script>
 </body>
 </html>
