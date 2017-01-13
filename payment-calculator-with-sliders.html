@@ -126,6 +126,12 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
   <script>
+    
+    // highlight clicked button in Loan Terms 
+    $('#loan-terms-block label').click(function(){
+      $('#loan-terms-block label').removeClass('active');
+      $(this).addClass('active');
+    });
     var accessoriesValue = $('#accessories-value');
     $("#accessories-slider").slider({ 
       max: 20000,
