@@ -70,6 +70,16 @@
         initialPaymentValue.html(ui.value);
       }
     });
+    
+    var interestRateValue = $('#interest-rate-value');
+    $("#interest-rate-slider").slider({ 
+      max: 20,
+      min: 0,
+      step:0.01,
+      slide: function(event, ui) {
+        interestRateValue.html(ui.value);
+      }
+    });
   </script>
 </body>
 </html>
