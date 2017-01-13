@@ -33,7 +33,7 @@
         <div class="form-group">
           <div class="col-sm-6">
             <p class="text-center">Loan Terms (months)</p>
-            <div class="btn-group btn-group-justified col-xs-12 nopadding">
+            <div class="btn-group btn-group-justified col-xs-12 nopadding" id="loan-terms-block">
               <label class="btn btn-primary">
                 <input type="radio" name="loan-terms" value="12">12
               </label>
@@ -93,7 +93,7 @@
           <div class="col-sm-12">
            <p>&nbsp;</p>
             <p class="text-center">Repayments</p>
-            <div class="btn-group btn-group-justified col-xs-12 nopadding">
+            <div class="btn-group btn-group-justified col-xs-12 nopadding" id="repayments-block">
               <label class="btn btn-primary">
                 <input type="radio" name="repayments" value="weekly">Weekly
               </label>
@@ -126,6 +126,19 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   
   <script>
+    
+    // highlight clicked button in Loan Terms 
+    $('#loan-terms-block label').click(function(){
+      $('#loan-terms-block label').removeClass('active');
+      $(this).addClass('active');
+    });
+    
+    // highlight clicked button in repayments
+    $('#repayments-block label').click(function(){
+      $('#repayments-block label').removeClass('active');
+      $(this).addClass('active');
+    });
+    
     var accessoriesValue = $('#accessories-value');
     $("#accessories-slider").slider({ 
       max: 20000,
@@ -170,6 +183,21 @@
       slide: function(event, ui) {
         interestRateValue.html(ui.value);
       }
+    });
+    
+    // get values from form
+    $('form#calculator-form').on("submit", function(event) {
+      event.stopPropagation();
+      event.preventDefault();
+      var loanTermMonths = $('form#calculator-form').find('#loan-terms-block input:checked').val();
+      var accesories = $('form#calculator-form').find('#accessories-value').text();
+      var exchange = $('form#calculator-form').find('#exchange-value').text();
+      var valueExchange = $('form#calculator-form').find('#value-exchange-value').text();
+      var initialPayment = $('form#calculator-form').find('#initial-payment-value').text();
+      var interestRate = $('form#calculator-form').find('#interest-rate-value').text();
+      var repayments = $('form#calculator-form').find('#repayments-block input:checked').val();
+
+      console.log(loanTermMonths + ' ' + accesories + ' ' + exchange + ' ' + valueExchange + ' ' + initialPayment + ' ' + interestRate + ' ' + repayments)
     });
   </script>
 </body>
