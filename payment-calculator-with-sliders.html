@@ -201,8 +201,17 @@
       var interestRate = $('form#calculator-form').find('#interest-rate-value').text();
       var repayments = $('form#calculator-form').find('#repayments-block input:checked').val();
 
-      console.log(loanTermMonths + ' ' + accesories + ' ' + exchange + ' ' + valueExchange + ' ' + initialPayment + ' ' + interestRate + ' ' + repayments)
+      calculatePayment (loanTermMonths, accesories, exchange, valueExchange, initialPayment, interestRate, repayments);
     });
+    
+    function calculatePayment(loanTermMonths, accesories, exchange, valueExchange, initialPayment, interestRate, repayments) {
+      if (loanTermMonths == null || repayments == null) {
+        alert('nn')
+      } else {
+        alert(loanTermMonths + ' ' + accesories + ' ' + exchange + ' ' + valueExchange + ' ' + initialPayment + ' ' + interestRate + ' ' + repayments);   
+      }
+     
+    }
   </script>
 </body>
 </html>
