@@ -209,6 +209,7 @@
     $('form#calculator-form').on("submit", function(event) {
       event.stopPropagation();
       event.preventDefault();
+      var carValue = $('form#calculator-form').find('#car-value').text();
       var loanTermMonths = $('form#calculator-form').find('#loan-terms-block input:checked').val();
       var accesories = $('form#calculator-form').find('#accessories-value').text();
       var exchange = $('form#calculator-form').find('#exchange-value').text();
