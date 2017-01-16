@@ -31,6 +31,13 @@
      
       <form id="calculator-form" class="form-horizontal">
         <div class="form-group">
+          <div class="col-sm-12">
+            <p class="text-center">Car value <b>$<span id="car-value">0</span></b></p>
+            <div class="slider" id="car-slider"></div>
+          </div>  
+        </div>
+        
+        <div class="form-group">
           <div class="col-sm-6">
             <p class="text-center">Loan Terms (months)</p>
             <div class="btn-group btn-group-justified col-xs-12 nopadding" id="loan-terms-block">
@@ -143,6 +150,15 @@
       $(this).addClass('active');
     });
     
+    var carValue = $('#car-value');
+    $("#car-slider").slider({ 
+      max: 100000,
+      min: 0,
+      slide: function(event, ui) {
+        carValue.html(ui.value);
+      }
+    });
+    
     var accessoriesValue = $('#accessories-value');
     $("#accessories-slider").slider({ 
       max: 20000,
@@ -193,6 +209,7 @@
     $('form#calculator-form').on("submit", function(event) {
       event.stopPropagation();
       event.preventDefault();
+      var carValue = $('form#calculator-form').find('#car-value').text();
       var loanTermMonths = $('form#calculator-form').find('#loan-terms-block input:checked').val();
       var accesories = $('form#calculator-form').find('#accessories-value').text();
       var exchange = $('form#calculator-form').find('#exchange-value').text();
@@ -201,8 +218,12 @@
       var interestRate = $('form#calculator-form').find('#interest-rate-value').text();
       var repayments = $('form#calculator-form').find('#repayments-block input:checked').val();
 
-      console.log(loanTermMonths + ' ' + accesories + ' ' + exchange + ' ' + valueExchange + ' ' + initialPayment + ' ' + interestRate + ' ' + repayments)
+      calculatePayment (carValue, loanTermMonths, accesories, exchange, valueExchange, initialPayment, interestRate, repayments);
     });
+    
+    function calculatePayment(carValue, loanTermMonths, accesories, exchange, valueExchange, initialPayment, interestRate, repayments) {
+        alert(carValue + ' ' + loanTermMonths + ' ' + accesories + ' ' + exchange + ' ' + valueExchange + ' ' + initialPayment + ' ' + interestRate + ' ' + repayments);   
+    }
   </script>
 </body>
 </html>
