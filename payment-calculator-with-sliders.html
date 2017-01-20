@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+  <title>Payment calculator with sliders</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <style>
+    /* calculator styles */
+    .nopadding {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    /* hide radio button */
+    label.btn-primary input {
+      display: none;
+    }
+    .slider {
+      margin-top: 23px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="container-fluid">
+    <h1 class="text-center">Payment calculator with sliders</h1>
+    
+    <div class="col-lg-8 col-lg-offset-2 well">
+     
+      <form id="calculator-form" class="form-horizontal">
+        <div class="form-group">
+          <div class="col-sm-12">
+            <p class="text-center">Car value <b>$<span id="car-value">0</span></b></p>
+            <div class="slider" id="car-slider"></div>
+          </div>  
+        </div>
+        
+        <div class="form-group">
+          <div class="col-sm-6">
+            <p class="text-center">Loan Terms (months)</p>
+            <div class="btn-group btn-group-justified col-xs-12 nopadding" id="loan-terms-block">
+              <label class="btn btn-primary active">
+                <input type="radio" name="loan-terms" value="12" checked="checked">12
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="loan-terms" value="24">24
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="loan-terms" value="36">36
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="loan-terms" value="48">48
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="loan-terms" value="60">60
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="loan-terms" value="72">72
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="loan-terms" value="84">84
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-center">Accessories <b>$<span id="accessories-value">0</span></b></p>
+            <div class="slider" id="accessories-slider"></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-6">
+            <p>&nbsp;</p>
+            <p class="text-center">Exchange <b>$<span id="exchange-value">0</span></b></p>
+            <div class="slider" id="exchange-slider"></div>
+          </div>
+          <div class="col-sm-6">
+            <p>&nbsp;</p>
+            <p class="text-center">Value of the exchange <b>$<span id="value-exchange-value">0</span></b></p>
+            <div class="slider" id="value-exchange-slider"></div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="col-sm-6">
+            <p>&nbsp;</p>
+            <p class="text-center">Initial payment <b>$<span id="initial-payment-value">0</span></b></p>
+            <div class="slider" id="initial-payment-slider"></div>
+          </div>
+          <div class="col-sm-6">
+            <p>&nbsp;</p>
+            <p class="text-center">Interest rate <b><span id="interest-rate-value">0</span>%</b></p>
+            <div class="slider" id="interest-rate-slider"></div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="col-sm-12">
+           <p>&nbsp;</p>
+            <p class="text-center">Repayments</p>
+            <div class="btn-group btn-group-justified col-xs-12 nopadding" id="repayments-block">
+              <label class="btn btn-primary">
+                <input type="radio" name="repayments" value="weekly">Weekly
+              </label>
+              <label class="btn btn-primary active">
+                <input type="radio" name="repayments" value="monthly" checked="checked">Monthly
+              </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="repayments" value="bimonthly">Bimonthly
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+          <div class="col-md-6 col-md-offset-3">
+            <button type="submit" class="btn-success btn btn-block btn-lg">Calculate</button>
+          </div>
+        </div>
+      </form>
+      
+      <div class="col col-xs-12">
+        <h4 class="text-center">$<span id="repayment-result-value"></span> <span id="repayment-result-type"></span></h4>
+      </div>
+    </div>
+  </div>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+    
+    // highlight clicked button in Loan Terms 
+    $('#loan-terms-block label').click(function(){
+      $('#loan-terms-block label').removeClass('active');
+      $(this).addClass('active');
+    });
+    
+    // highlight clicked button in repayments
+    $('#repayments-block label').click(function(){
+      $('#repayments-block label').removeClass('active');
+      $(this).addClass('active');
+    });
+    
+    var carValue = $('#car-value');
+    $("#car-slider").slider({ 
+      max: 100000,
+      min: 0,
+      slide: function(event, ui) {
+        carValue.html(ui.value);
+      }
+    });
+    
+    var accessoriesValue = $('#accessories-value');
+    $("#accessories-slider").slider({ 
+      max: 20000,
+      min: 0,
+      slide: function(event, ui) {
+        accessoriesValue.html(ui.value);
+      }
+    });
+
+    var exchangeValue = $('#exchange-value');
+    $("#exchange-slider").slider({ 
+      max: 100000,
+      min: 0,
+      slide: function(event, ui) {
+        exchangeValue.html(ui.value);
+      }
+    });
+
+    var valueExchangeValue = $('#value-exchange-value');
+    $("#value-exchange-slider").slider({ 
+      max: 100000,
+      min: 0,
+      slide: function(event, ui) {
+        valueExchangeValue.html(ui.value);
+      }
+    });
+    
+    var initialPaymentValue = $('#initial-payment-value');
+    $("#initial-payment-slider").slider({ 
+      max: 30000,
+      min: 0,
+      slide: function(event, ui) {
+        initialPaymentValue.html(ui.value);
+      }
+    });
+    
+    var interestRateValue = $('#interest-rate-value');
+    $("#interest-rate-slider").slider({ 
+      max: 20,
+      min: 0,
+      step:0.01,
+      slide: function(event, ui) {
+        interestRateValue.html(ui.value);
+      }
+    });
+    
+    // get values from form
+    $('form#calculator-form').on("submit", function(event) {
+      event.stopPropagation();
+      event.preventDefault();
+      var carValue = $('form#calculator-form').find('#car-value').text();
+      var loanTermMonths = $('form#calculator-form').find('#loan-terms-block input:checked').val();
+      var accesories = $('form#calculator-form').find('#accessories-value').text();
+      var exchange = $('form#calculator-form').find('#exchange-value').text();
+      var valueExchange = $('form#calculator-form').find('#value-exchange-value').text();
+      var initialPayment = $('form#calculator-form').find('#initial-payment-value').text();
+      var interestRate = $('form#calculator-form').find('#interest-rate-value').text();
+      var repayments = $('form#calculator-form').find('#repayments-block input:checked').val();
+
+      calculatePayment (carValue, loanTermMonths, accesories, exchange, valueExchange, initialPayment, interestRate, repayments);
+    });
+    
+    function calculatePayment(carValue, loanTermMonths, accesories, exchange, valueExchange, initialPayment, interestRate, repayments) {
+        alert('Car value: ' + carValue + '\n' + 
+              'Loan Terms: ' + loanTermMonths + '\n' + 
+              'Accesories: ' + accesories + '\n' + 
+              'Exchange: ' + exchange + '\n' + 
+              'Value of the exchange: ' + valueExchange + '\n' +
+              'Initial payment: ' + initialPayment + '\n' + 
+              'Interest rate: ' + interestRate + '\n' + 
+              'Repayments: ' + repayments);   
+    }
+  </script>
+</body>
+</html>
