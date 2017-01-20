@@ -7,6 +7,19 @@
   <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
+    /* remove margin and padding */
+    .nopadding {
+       padding: 0 !important;
+       margin: 0 !important;
+    }
+    /* span all buttons across div width */
+    label.btn.btn-primary {
+      width: 20%;
+    }
+    /* hide radio button */
+    label.btn-primary input {
+      display: none;
+    }
     /* Add a gray background color and some padding to the footer */
     footer {
       border-top: 1px solid #808080;
@@ -34,21 +47,23 @@
         </div>
         <div class="col-sm-6">
           <p>Loan Terms (months)</p>
-          <button type="button" class="btn btn-primary">
-            <input type="radio" name="loan-terms" value="12">12
-          </button>
-          <button type="button" class="btn btn-primary">
-            <input type="radio" name="loan-terms" value="24">24
-          </button>
-          <button type="button" class="btn btn-primary">
-            <input type="radio" name="loan-terms" value="36">36
-          </button>
-          <button type="button" class="btn btn-primary">
-            <input type="radio" name="loan-terms" value="48">48
-          </button>
-          <button type="button" class="btn btn-primary">
-            <input type="radio" name="loan-terms" value="60">60
-          </button>
+          <div class="btn-group col-xs-12 nopadding">
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="12">12
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="24">24
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="36">36
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="48">48
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="60">60
+            </label>
+          </div>
         </div>
       </div>
       
