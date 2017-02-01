@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Responsive YouTube video</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+    }
+    .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Responsive YouTube video</h2>
+  </div>
+</div>
+  
+<div class="container">
+ 
+  <div class="videoWrapper">
+    <iframe width="560" height="349" src="https://www.youtube.com/embed?listType=user_uploads&list=4rdguyBarrie" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <h2>HTML</h2>
+  
+  <pre>
+    <code>
+&lt;div class=&quot;videoWrapper&quot;&gt;
+  &lt;iframe width=&quot;560&quot; height=&quot;349&quot; src=&quot;https://www.youtube.com/embed?listType=user_uploads&amp;list=4rdguyBarrie&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;  
+    </code>
+  </pre>
+  
+  <h2>CSS</h2>
+  
+  <pre>
+    <code>
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}   
+    </code>
+  </pre>
+
+</div>
+<br>
+<br>
+
+<footer class="container-fluid">
+  <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+</footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
