@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hide top part of iframe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .inventory-iframe {
+      overflow: hidden;
+    }
+    .inventory-iframe iframe {
+      margin-top: -160px;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h2>Hide top part of iframe</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="alert alert-warning">
+      <h2 class="text-center">Original</h2>
+    </div>
+
+    <iframe src="https://github.com" height="450" width="100%" frameborder="0"></iframe>
+
+
+    <div class="alert alert-warning">
+      <h2 class="text-center">Top part hidden (header)</h2>
+    </div>
+
+    <div class="inventory-iframe">
+      <iframe src="https://github.com" height="450" width="100%" frameborder="0"></iframe>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <footer class="container-fluid">
+    <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+  </footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
