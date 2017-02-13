@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add overlay image</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    img.overlay {
+      position:absolute;
+      bottom:0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Add overlay image</h2>
+  </div>
+</div>
+  
+<div class="container">
+
+  <h1 class="text-center">Single image</h1>
+  
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <img src="images/overlay-image-car.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+
+  <h1 class="text-center">Image with image overlay</h1>
+  
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 featured-image">
+      <img src="images/overlay-image-car.jpg" alt="" class="img-responsive">
+    </div>
+  </div>
+  
+  <h2>HTML</h2>
+  
+  <pre>
+    <code>
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6 col-md-offset-3 featured-image&quot;&gt;
+      &lt;img src=&quot;images/overlay-image-car.jpg&quot; alt=&quot;&quot; class=&quot;img-responsive&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;    
+    </code>
+  </pre>
+  
+  <h2>CSS</h2>
+  
+  <pre>
+    <code>
+  img.overlay {
+    position:absolute;
+    bottom:0;
+  }    
+    </code>
+  </pre>
+  
+  <h2>JS</h2>
+  
+  <pre>
+    <code>
+  function addImageOverlay() {
+    var imgHeight = $(&quot;.featured-image img.img-responsive&quot;).height();
+    var imgWidth = $(&quot;.featured-image img.img-responsive&quot;).width();
+    
+    $('img.overlay').remove();
+    $('.featured-image').append('&lt;img src=&quot;/images/overlay-image-ballons.png&quot; class=&quot;overlay&quot;&gt;');
+    
+    $(&quot;.featured-image img.overlay&quot;).attr('width', imgWidth);
+    $(&quot;.featured-image img.overlay&quot;).attr('height', imgHeight); }
+    
+    // run on load
+    addImageOverlay();
+    // run on resize
+    $(window).on('resize', function(){
+      addImageOverlay();
+    });    
+    </code>
+  </pre>
+
+</div>
+<br>
+<br>
+
+<footer class="container-fluid">
+  <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+</footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script>
+    // featured image overlay
+    function addImageOverlay() {
+      var imgHeight = $(".featured-image img.img-responsive").height();
+      var imgWidth = $(".featured-image img.img-responsive").width();
+      
+      $('img.overlay').remove();
+      $('.featured-image').append('<img src="/images/overlay-image-ballons.png" class="overlay">');
+
+      $(".featured-image img.overlay").attr('width', imgWidth);
+      $(".featured-image img.overlay").attr('height', imgHeight);
+    }
+    // run on load
+    addImageOverlay();
+    // run on resize
+    $(window).on('resize', function(){
+      addImageOverlay();
+    });
+  </script>
+
+</body>
+</html>
