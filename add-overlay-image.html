@@ -69,6 +69,26 @@
     </code>
   </pre>
   
+  <h2>JS</h2>
+  
+  <pre>
+    <code>
+  function addImageOverlay() {
+    var imgHeight = $(&quot;.featured-image img.img-responsive&quot;).height();
+    var imgWidth = $(&quot;.featured-image img.img-responsive&quot;).width();
+    
+    $('img.overlay').remove();
+    $('.featured-image').append('&lt;img src=&quot;/images/overlay-image-ballons.png&quot; class=&quot;overlay&quot;&gt;');
+    
+    $(&quot;.featured-image img.overlay&quot;).attr('width', imgWidth);
+    $(&quot;.featured-image img.overlay&quot;).attr('height', imgHeight); }
+    
+    // run on load
+    addImageOverlay();
+    // run on resize
+    $(window).on('resize', function(){
+      addImageOverlay();
+    });    
     </code>
   </pre>
 
