@@ -80,8 +80,9 @@
     function addImageOverlay() {
       var imgHeight = $(".featured-image img.img-responsive").height();
       var imgWidth = $(".featured-image img.img-responsive").width();
-
-      $('.featured-image').append('<img src="/images/overlay-image-ballons.png">');
+      
+      $('img.overlay').remove();
+      $('.featured-image').append('<img src="/images/overlay-image-ballons.png" class="overlay">');
 
       $(".featured-image img.overlay").attr('width', imgWidth);
       $(".featured-image img.overlay").attr('height', imgHeight);
