@@ -7,4 +7,5 @@
 
 - [https://josefzacek.github.io/SO-Tips/prevent-iframe-redirection.html] (https://josefzacek.github.io/SO-Tips/prevent-iframe-redirection.html)
 
-- [https://josefzacek.github.io/SO-Tips//match-height-of-boxes-in-row.html] (https://josefzacek.github.io/SO-Tips//match-height-of-boxes-in-row.html)
+- [https://josefzacek.github.io/SO-Tips/match-height-of-boxes-in-row.html] (https://josefzacek.github.io/SO-Tips/match-height-of-boxes-in-row.html)
+
