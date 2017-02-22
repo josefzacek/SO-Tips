@@ -44,6 +44,13 @@ function run(){
     "http://www.tullamoremotors.ie/finance/",
     "http://www.tullamoremotors.ie/web/service/",
     "http://www.tullamoremotors.ie/web/book-a-test-drive/",
+    
+    // Bradley renault
+    "http://www.bradleyrenault.ie/",
+    "http://www.bradleyrenault.ie/contactus.php",
+    "http://www.bradleyrenault.ie/finance.php",
+    "http://www.bradleyrenault.ie/servicing.php",
+    "http://www.bradleyrenault.ie/promotions.php",
   ];
 
   var index = 0;
