@@ -34,7 +34,16 @@ function run(){
     "http://obrienskilkenny.ie/contact-us/",
     "http://obrienskilkenny.ie/book-a-test-drive/",
     "http://obrienskilkenny.ie/request-a-brochure/",
-    "http://obrienskilkenny.ie/book-a-service/"
+    "http://obrienskilkenny.ie/book-a-service/",
+    
+    // Tullamore motors
+    "http://www.tullamoremotors.ie/contentv3/",
+    "http://www.tullamoremotors.ie/web/contact/",
+    "http://www.tullamoremotors.ie/web/bookservice/",
+    "http://www.tullamoremotors.ie/web/car-hire/",
+    "http://www.tullamoremotors.ie/finance/",
+    "http://www.tullamoremotors.ie/web/service/",
+    "http://www.tullamoremotors.ie/web/book-a-test-drive/",
   ];
 
   var index = 0;
