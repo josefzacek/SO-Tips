@@ -73,6 +73,19 @@ function run(){
     "http://www.dennehymotors.ie/web/request-brochure/",
     "http://www.dennehymotors.ie/web/book-testdrive/",
     "http://www.dennehymotors.ie/web/requestparts",
+    
+    // Hogan Motors Ennis
+    "http://www.hoganmotorsennis.ie/contentv3/",
+    "http://www.hoganmotorsennis.ie/web/contact-us/",
+    "http://www.hoganmotorsennis.ie/web/new-cars/",
+    "http://www.hoganmotorsennis.ie/usedcars/",
+    "http://www.hoganmotorsennis.ie/finance/",
+    "http://www.hoganmotorsennis.ie/web/service-and-parts/",
+    "http://www.hoganmotorsennis.ie/web/request-a-brochure",
+    "http://www.hoganmotorsennis.ie/web/test-drive",
+    "http://www.hoganmotorsennis.ie/web/request-a-service",
+    "http://www.hoganmotorsennis.ie/web/request-call-back",
+    "http://www.hoganmotorsennis.ie/contentv3/index.cfm?fuseaction=page&pageID=35603",
   ];
 
   var index = 0;
