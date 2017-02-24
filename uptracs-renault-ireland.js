@@ -51,6 +51,17 @@ function run(){
     "http://www.bradleyrenault.ie/finance.php",
     "http://www.bradleyrenault.ie/servicing.php",
     "http://www.bradleyrenault.ie/promotions.php",
+    
+    // Pobrien
+    "http://www.pobrien.ie/contentv3/",
+    "http://www.pobrien.ie/web/contact/",
+    "http://www.pobrien.ie/finance/",
+    "http://www.pobrien.ie/web/service/",
+    "http://www.pobrien.ie/web/car-hire/",
+    "http://www.pobrien.ie/web/request-call-back/",
+    "http://www.pobrien.ie/web/bookservice/",
+    "http://www.pobrien.ie/web/book-a-test-drive/",
+    "http://www.pobrien.ie/web/trade-in/",
   ];
 
   var index = 0;
