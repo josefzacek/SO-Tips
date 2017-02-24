@@ -62,6 +62,17 @@ function run(){
     "http://www.pobrien.ie/web/bookservice/",
     "http://www.pobrien.ie/web/book-a-test-drive/",
     "http://www.pobrien.ie/web/trade-in/",
+    
+    // Dennehy Motors
+    "http://www.dennehymotors.ie/contentv3/",
+    "http://www.dennehymotors.ie/web/contact-us/",
+    "http://www.dennehymotors.ie/web/financeapplication/",
+    "http://www.dennehymotors.ie/web/bookservice/",
+    "http://www.dennehymotors.ie/web/book-adoetestcvrt/",
+    "http://www.dennehymotors.ie/web/winter-service-offer/",
+    "http://www.dennehymotors.ie/web/request-brochure/",
+    "http://www.dennehymotors.ie/web/book-testdrive/",
+    "http://www.dennehymotors.ie/web/requestparts",
   ];
 
   var index = 0;
