@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form select dropdown arrows</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script async src="https://use.fontawesome.com/fe82daa0b6.js"></script>
+  <style>
+    .dropdown-arrow select.form-control {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    .dropdown-arrow::after {
+      content: '\f078';
+      font-family: 'FontAwesome';
+      font-size: 10px;
+      position: relative;
+      bottom: 25px;
+      float: right;
+      margin-right: 10px;
+      pointer-events: none;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Form select dropdown arrows</h2>
+  </div>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+  
+      <form>
+        <p class="text-success">Dropdown with label</p>
+        <div class="form-group dropdown-arrow">
+          <label for="contact-method">Contact method</label>
+          <select name="contact-method" id="contact-method" class="form-control">
+            <option selected disabled>Please select prefered contact method</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="post">Post</option>
+          </select>
+        </div>
+
+        <p class="text-success">Dropdown withoput label</p>
+        <div class="form-group dropdown-arrow">
+          <select name="contact-method" id="contact-method" class="form-control">
+            <option selected disabled>Please select prefered contact method</option>
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="post">Post</option>
+          </select>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+     
+  <div class="row">
+    <div class="col-md-12">
+      
+        <h2>Load Font Awesome</h2>
+  
+  <pre>
+    <code>
+&lt;script async src=&quot;https://use.fontawesome.com/fe82daa0b6.js&quot;&gt;&lt;/script&gt;
+    </code>
+  </pre>
+      
+      <h2>HTML</h2>
+  
+  <pre>
+    <code>
+Dropdown with label
+
+&lt;div class=&quot;form-group dropdown-arrow&quot;&gt;
+  &lt;label for=&quot;contact-method&quot;&gt;Contact method&lt;/label&gt;
+  &lt;select name=&quot;contact-method&quot; id=&quot;contact-method&quot; class=&quot;form-control&quot;&gt;
+    &lt;option selected disabled&gt;Please select prefered contact method&lt;/option&gt;
+    &lt;option value=&quot;email&quot;&gt;Email&lt;/option&gt;
+    &lt;option value=&quot;phone&quot;&gt;Phone&lt;/option&gt;
+    &lt;option value=&quot;post&quot;&gt;Post&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+   
+Dropdown withoput label
+
+&lt;div class=&quot;form-group dropdown-arrow&quot;&gt;
+  &lt;select name=&quot;contact-method&quot; id=&quot;contact-method&quot; class=&quot;form-control&quot;&gt;
+    &lt;option selected disabled&gt;Please select prefered contact method&lt;/option&gt;
+    &lt;option value=&quot;email&quot;&gt;Email&lt;/option&gt;
+    &lt;option value=&quot;phone&quot;&gt;Phone&lt;/option&gt;
+    &lt;option value=&quot;post&quot;&gt;Post&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;  
+    </code>
+  </pre>
+  
+  <h2>CSS</h2>
+  
+  <pre>
+    <code>
+.dropdown-arrow select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.dropdown-arrow::after {
+  content: '\f078';
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  position: relative;
+  bottom: 25px;
+  float: right;
+  margin-right: 10px;
+  pointer-events: none;
+} 
+    </code>
+  </pre>
+      
+    
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+<footer class="container-fluid">
+  <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+</footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
