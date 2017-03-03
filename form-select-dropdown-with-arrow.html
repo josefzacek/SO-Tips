@@ -6,8 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <style> 
   <script async src="https://use.fontawesome.com/fe82daa0b6.js"></script>
+  <style>
+    .dropdown-arrow select.form-control {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    .dropdown-arrow::after {
+      content: '\f078';
+      font-family: 'FontAwesome';
+      font-size: 10px;
+      position: relative;
+      bottom: 25px;
+      float: right;
+      margin-right: 10px;
+      pointer-events: none;
+    }
     /* Add a gray background color and some padding to the footer */
     footer {
       border-top: 1px solid #808080;
