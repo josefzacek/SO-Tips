@@ -101,6 +101,29 @@ Dropdown withoput label
 &lt;/div&gt;  
     </code>
   </pre>
+  
+  <h2>CSS</h2>
+  
+  <pre>
+    <code>
+.dropdown-arrow select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.dropdown-arrow::after {
+  content: '\f078';
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  position: relative;
+  bottom: 25px;
+  float: right;
+  margin-right: 10px;
+  pointer-events: none;
+} 
+    </code>
+  </pre>
+      
     
     </div>
   </div>
