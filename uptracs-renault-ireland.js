@@ -86,6 +86,16 @@ function run(){
     "http://www.hoganmotorsennis.ie/web/request-a-service",
     "http://www.hoganmotorsennis.ie/web/request-call-back",
     "http://www.hoganmotorsennis.ie/contentv3/index.cfm?fuseaction=page&pageID=35603",
+    
+    // Joe Mallon Portaloise
+    "http://www.joemallonportlaoise.ie/contentv3/",
+    "http://www.joemallonportlaoise.ie/web/contact/",
+    "http://www.joemallonportlaoise.ie/web/request-call-back/",
+    "http://www.joemallonportlaoise.ie/web/book-a-test-drive/",
+    "http://www.joemallonportlaoise.ie/web/bookservice/",
+    "http://www.joemallonportlaoise.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
+    "http://www.joemallonportlaoise.ie/web/brochure/",
+    "http://www.joemallonportlaoise.ie/web/trade-in/",
   ];
 
   var index = 0;
