@@ -97,6 +97,12 @@ function run(){
     "http://www.joemallonportlaoise.ie/web/brochure/",
     "http://www.joemallonportlaoise.ie/web/trade-in/",
     
+    // Clearymotors
+    "http://clearymotors.ie/",
+    "http://clearymotors.ie/book-a-test-drive/",
+    "http://clearymotors.ie/request-a-brochure/",
+    "http://clearymotors.ie/book-a-service/",
+    "http://clearymotors.ie/contact-us/",
     
     // Donagh Hickey Motors
     "http://donaghhickeymotors.com/",
