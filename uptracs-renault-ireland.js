@@ -96,6 +96,13 @@ function run(){
     "http://www.joemallonportlaoise.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
     "http://www.joemallonportlaoise.ie/web/brochure/",
     "http://www.joemallonportlaoise.ie/web/trade-in/",
+    
+    // P & H Doyle
+    "http://phdoyle.com/",
+    "http://phdoyle.com/contact-us/",
+    "http://phdoyle.com/book-a-test-drive/",
+    "http://phdoyle.com/book-a-service/",
+    "http://phdoyle.com/request-a-brochure/",
   ];
 
   var index = 0;
