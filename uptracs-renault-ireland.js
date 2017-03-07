@@ -97,6 +97,14 @@ function run(){
     "http://www.joemallonportlaoise.ie/web/brochure/",
     "http://www.joemallonportlaoise.ie/web/trade-in/",
     
+    
+    // Donagh Hickey Motors
+    "http://donaghhickeymotors.com/",
+    "http://donaghhickeymotors.com/contact-us/",
+    "http://donaghhickeymotors.com/book-a-test-drive/",
+    "http://donaghhickeymotors.com/book-a-service/",
+    "http://donaghhickeymotors.com/request-a-brochure/",
+    
     // P & H Doyle
     "http://phdoyle.com/",
     "http://phdoyle.com/contact-us/",
