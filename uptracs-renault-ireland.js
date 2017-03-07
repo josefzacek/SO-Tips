@@ -96,6 +96,27 @@ function run(){
     "http://www.joemallonportlaoise.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
     "http://www.joemallonportlaoise.ie/web/brochure/",
     "http://www.joemallonportlaoise.ie/web/trade-in/",
+    
+    // Clearymotors
+    "http://clearymotors.ie/",
+    "http://clearymotors.ie/book-a-test-drive/",
+    "http://clearymotors.ie/request-a-brochure/",
+    "http://clearymotors.ie/book-a-service/",
+    "http://clearymotors.ie/contact-us/",
+    
+    // Donagh Hickey Motors
+    "http://donaghhickeymotors.com/",
+    "http://donaghhickeymotors.com/contact-us/",
+    "http://donaghhickeymotors.com/book-a-test-drive/",
+    "http://donaghhickeymotors.com/book-a-service/",
+    "http://donaghhickeymotors.com/request-a-brochure/",
+    
+    // P & H Doyle
+    "http://phdoyle.com/",
+    "http://phdoyle.com/contact-us/",
+    "http://phdoyle.com/book-a-test-drive/",
+    "http://phdoyle.com/book-a-service/",
+    "http://phdoyle.com/request-a-brochure/",
   ];
 
   var index = 0;
