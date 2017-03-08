@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap accordion with arrows</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .accordion-block a {
+      color: #000;
+    }
+    .accordion-block a:hover {
+      color: #fff;
+    }
+    .accordion-block a.accordion-button {
+      display: block;
+      text-decoration: none;
+      padding: 15px;
+      background-color: #eee;
+      border-top: 1px solid #808080;
+      border-left: 1px solid #808080;
+      border-right: 1px solid #808080;
+    }
+    .accordion-block a.accordion-button:hover {
+      background: #bfbfbf; 
+    }
+    .accordion-block a.accordion-button:first-of-type{
+      border-radius: 3px 3px 0 0;
+    }
+    .accordion-block a.accordion-button:last-of-type{
+      border-radius: 0 0 0 0;
+    }
+    .accordion-block a.accordion-button.collapsed:last-of-type{
+      border-radius: 0 0 3px 3px;
+      border-bottom: 1px solid #808080;
+    }
+    .accordion-block .accordion-content {
+      padding: 15px;
+      background: #fffbfb;
+      border-left: 1px solid #808080;
+      border-right: 1px solid #808080;
+    }
+    .accordion-block .accordion-content:last-of-type{ 
+      border-bottom: 1px solid #808080;
+      border-radius: 0 0 3px 3px;
+    }
+    .accordion-block i.fa {
+      float: right;
+      margin-right: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .accordion-block .accordion-button.collapsed i.fa.fa-angle-down {
+      display: block;
+    }
+    .accordion-block .accordion-button i.fa.fa-angle-down {
+      display: none;
+    }
+    .accordion-block .accordion-button i.fa.fa-angle-up {
+      display: block;
+    }
+    .accordion-block .accordion-button.collapsed i.fa.fa-angle-up {
+      display: none;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Bootstrap accordion with arrows</h2>
+  </div>
+</div>
+  
+<div class="container-fluid">    
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 accordion-block">
+     
+      <a class="accordion-button collapsed" role="button" data-toggle="collapse" href="#question1" aria-expanded="false">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <b>Question 1</b>
+      </a>
+      <div id="question1" class="accordion-content collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur, nam temporibus eum labore illum dolorum maiores error maxime ipsum voluptatibus unde velit ipsa, quibusdam suscipit aut, nesciunt sapiente beatae.</p>
+      </div>
+      
+      <a class="accordion-button collapsed" role="button" data-toggle="collapse" href="#question2" aria-expanded="false">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <b>Question 2</b>
+      </a>
+      <div id="question2" class="accordion-content collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur, nam temporibus eum labore illum dolorum maiores error maxime ipsum voluptatibus unde velit ipsa, quibusdam suscipit aut, nesciunt sapiente beatae.</p>
+      </div>
+      
+      <a class="accordion-button collapsed" role="button" data-toggle="collapse" href="#question3" aria-expanded="false">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <b>Question 3</b>
+      </a>
+      <div id="question3" class="accordion-content collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur, nam temporibus eum labore illum dolorum maiores error maxime ipsum voluptatibus unde velit ipsa, quibusdam suscipit aut, nesciunt sapiente beatae.</p>
+      </div>
+      
+      <a class="accordion-button collapsed" role="button" data-toggle="collapse" href="#question4" aria-expanded="false">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <b>Question 4</b>
+      </a>
+      <div id="question4" class="accordion-content collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur, nam temporibus eum labore illum dolorum maiores error maxime ipsum voluptatibus unde velit ipsa, quibusdam suscipit aut, nesciunt sapiente beatae.</p>
+      </div>
+      
+      <a class="accordion-button collapsed" role="button" data-toggle="collapse" href="#question5" aria-expanded="false">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <b>Question 5</b>
+      </a>
+      <div id="question5" class="accordion-content collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur, nam temporibus eum labore illum dolorum maiores error maxime ipsum voluptatibus unde velit ipsa, quibusdam suscipit aut, nesciunt sapiente beatae.</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+
+<footer class="container-fluid">
+  <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+</footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- font awesome -->
+  <script async src="https://use.fontawesome.com/fe82daa0b6.js"></script>
+
+</body>
+</html>
