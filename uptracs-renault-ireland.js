@@ -86,6 +86,37 @@ function run(){
     "http://www.hoganmotorsennis.ie/web/request-a-service",
     "http://www.hoganmotorsennis.ie/web/request-call-back",
     "http://www.hoganmotorsennis.ie/contentv3/index.cfm?fuseaction=page&pageID=35603",
+    
+    // Joe Mallon Portaloise
+    "http://www.joemallonportlaoise.ie/contentv3/",
+    "http://www.joemallonportlaoise.ie/web/contact/",
+    "http://www.joemallonportlaoise.ie/web/request-call-back/",
+    "http://www.joemallonportlaoise.ie/web/book-a-test-drive/",
+    "http://www.joemallonportlaoise.ie/web/bookservice/",
+    "http://www.joemallonportlaoise.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
+    "http://www.joemallonportlaoise.ie/web/brochure/",
+    "http://www.joemallonportlaoise.ie/web/trade-in/",
+    
+    // Clearymotors
+    "http://clearymotors.ie/",
+    "http://clearymotors.ie/book-a-test-drive/",
+    "http://clearymotors.ie/request-a-brochure/",
+    "http://clearymotors.ie/book-a-service/",
+    "http://clearymotors.ie/contact-us/",
+    
+    // Donagh Hickey Motors
+    "http://donaghhickeymotors.com/",
+    "http://donaghhickeymotors.com/contact-us/",
+    "http://donaghhickeymotors.com/book-a-test-drive/",
+    "http://donaghhickeymotors.com/book-a-service/",
+    "http://donaghhickeymotors.com/request-a-brochure/",
+    
+    // P & H Doyle
+    "http://phdoyle.com/",
+    "http://phdoyle.com/contact-us/",
+    "http://phdoyle.com/book-a-test-drive/",
+    "http://phdoyle.com/book-a-service/",
+    "http://phdoyle.com/request-a-brochure/",
   ];
 
   var index = 0;
