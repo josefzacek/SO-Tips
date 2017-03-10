@@ -34,7 +34,89 @@ function run(){
     "http://obrienskilkenny.ie/contact-us/",
     "http://obrienskilkenny.ie/book-a-test-drive/",
     "http://obrienskilkenny.ie/request-a-brochure/",
-    "http://obrienskilkenny.ie/book-a-service/"
+    "http://obrienskilkenny.ie/book-a-service/",
+    
+    // Tullamore motors
+    "http://www.tullamoremotors.ie/contentv3/",
+    "http://www.tullamoremotors.ie/web/contact/",
+    "http://www.tullamoremotors.ie/web/bookservice/",
+    "http://www.tullamoremotors.ie/web/car-hire/",
+    "http://www.tullamoremotors.ie/finance/",
+    "http://www.tullamoremotors.ie/web/service/",
+    "http://www.tullamoremotors.ie/web/book-a-test-drive/",
+    
+    // Bradley renault
+    "http://www.bradleyrenault.ie/",
+    "http://www.bradleyrenault.ie/contactus.php",
+    "http://www.bradleyrenault.ie/finance.php",
+    "http://www.bradleyrenault.ie/servicing.php",
+    "http://www.bradleyrenault.ie/promotions.php",
+    
+    // Pobrien
+    "http://www.pobrien.ie/contentv3/",
+    "http://www.pobrien.ie/web/contact/",
+    "http://www.pobrien.ie/finance/",
+    "http://www.pobrien.ie/web/service/",
+    "http://www.pobrien.ie/web/car-hire/",
+    "http://www.pobrien.ie/web/request-call-back/",
+    "http://www.pobrien.ie/web/bookservice/",
+    "http://www.pobrien.ie/web/book-a-test-drive/",
+    "http://www.pobrien.ie/web/trade-in/",
+    
+    // Dennehy Motors
+    "http://www.dennehymotors.ie/contentv3/",
+    "http://www.dennehymotors.ie/web/contact-us/",
+    "http://www.dennehymotors.ie/web/financeapplication/",
+    "http://www.dennehymotors.ie/web/bookservice/",
+    "http://www.dennehymotors.ie/web/book-adoetestcvrt/",
+    "http://www.dennehymotors.ie/web/winter-service-offer/",
+    "http://www.dennehymotors.ie/web/request-brochure/",
+    "http://www.dennehymotors.ie/web/book-testdrive/",
+    "http://www.dennehymotors.ie/web/requestparts",
+    
+    // Hogan Motors Ennis
+    "http://www.hoganmotorsennis.ie/contentv3/",
+    "http://www.hoganmotorsennis.ie/web/contact-us/",
+    "http://www.hoganmotorsennis.ie/web/new-cars/",
+    "http://www.hoganmotorsennis.ie/usedcars/",
+    "http://www.hoganmotorsennis.ie/finance/",
+    "http://www.hoganmotorsennis.ie/web/service-and-parts/",
+    "http://www.hoganmotorsennis.ie/web/request-a-brochure",
+    "http://www.hoganmotorsennis.ie/web/test-drive",
+    "http://www.hoganmotorsennis.ie/web/request-a-service",
+    "http://www.hoganmotorsennis.ie/web/request-call-back",
+    "http://www.hoganmotorsennis.ie/contentv3/index.cfm?fuseaction=page&pageID=35603",
+    
+    // Joe Mallon Portaloise
+    "http://www.joemallonportlaoise.ie/contentv3/",
+    "http://www.joemallonportlaoise.ie/web/contact/",
+    "http://www.joemallonportlaoise.ie/web/request-call-back/",
+    "http://www.joemallonportlaoise.ie/web/book-a-test-drive/",
+    "http://www.joemallonportlaoise.ie/web/bookservice/",
+    "http://www.joemallonportlaoise.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
+    "http://www.joemallonportlaoise.ie/web/brochure/",
+    "http://www.joemallonportlaoise.ie/web/trade-in/",
+    
+    // Clearymotors
+    "http://clearymotors.ie/",
+    "http://clearymotors.ie/book-a-test-drive/",
+    "http://clearymotors.ie/request-a-brochure/",
+    "http://clearymotors.ie/book-a-service/",
+    "http://clearymotors.ie/contact-us/",
+    
+    // Donagh Hickey Motors
+    "http://donaghhickeymotors.com/",
+    "http://donaghhickeymotors.com/contact-us/",
+    "http://donaghhickeymotors.com/book-a-test-drive/",
+    "http://donaghhickeymotors.com/book-a-service/",
+    "http://donaghhickeymotors.com/request-a-brochure/",
+    
+    // P & H Doyle
+    "http://phdoyle.com/",
+    "http://phdoyle.com/contact-us/",
+    "http://phdoyle.com/book-a-test-drive/",
+    "http://phdoyle.com/book-a-service/",
+    "http://phdoyle.com/request-a-brochure/",
   ];
 
   var index = 0;

@@ -5,6 +5,8 @@
 
 - [https://josefzacek.github.io/SO-Tips/responsive-facebook-feed-on-resize.html] (https://josefzacek.github.io/SO-Tips/responsive-facebook-feed-on-resize.html)
 
+- [https://josefzacek.github.io/SO-Tips/form-select-dropdown-with-arrow.html] (https://josefzacek.github.io/SO-Tips/form-select-dropdown-with-arrow.html)
+
 - [https://josefzacek.github.io/SO-Tips/prevent-iframe-redirection.html] (https://josefzacek.github.io/SO-Tips/prevent-iframe-redirection.html)
 
 - [https://josefzacek.github.io/SO-Tips/match-height-of-boxes-in-row.html] (https://josefzacek.github.io/SO-Tips/match-height-of-boxes-in-row.html)

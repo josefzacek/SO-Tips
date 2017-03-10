@@ -4,21 +4,21 @@ function run(){
 
   var url = [
     // Colton Motors mazda
-    "http://www.coltonmazda.ie/contentv3/",
-    "http://www.coltonmazda.ie/dealers/index.cfm?fuseaction=mazdadealer.map",
-    "http://www.coltonmazda.ie/web/book-service",
-    "http://www.coltonmazda.ie/web/test-drive",
-    "http://www.coltonmazda.ie/web/request-callback",
+//    "http://www.coltonmazda.ie/contentv3/",
+//    "http://www.coltonmazda.ie/dealers/index.cfm?fuseaction=mazdadealer.map",
+//    "http://www.coltonmazda.ie/web/book-service",
+//    "http://www.coltonmazda.ie/web/test-drive",
+//    "http://www.coltonmazda.ie/web/request-callback",
     
     // Coltons Motors
-    "http://www.coltonmotorsford.ie/",
-    "http://www.coltonmotorsford.ie/BranchLocation/1031/contact-your-local-ford-dealer-colton-motors-in-the-midlands?of=/Contact/BookTestDrive",
+//    "http://www.coltonmotorsford.ie/",
+//    "http://www.coltonmotorsford.ie/BranchLocation/1031/contact-your-local-ford-dealer-colton-motors-in-the-midlands?of=/Contact/BookTestDrive",
     
     // Colton Seat
-    "http://www.colton-seat.ie/",
-    "http://www.seat.ie/webform/test-drive.html",
-    "http://www.seat.ie/webform/contact-us.html",
-    "http://www.seat.ie/shopping-tools/finance-calculator.html",
+//    "http://www.colton-seat.ie/",
+//    "http://www.seat.ie/webform/test-drive.html",
+//    "http://www.seat.ie/webform/contact-us.html",
+//    "http://www.seat.ie/shopping-tools/finance-calculator.html",
 
     // Frank Keane
     "http://www.frankkeane.ie/contentv3/",
