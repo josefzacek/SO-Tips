@@ -72,6 +72,11 @@ function run(){
     "http://www.kearys.ie/new-cars",
     "http://www.kearys.ie/usedcars/index.cfm?fuseaction=search&categoryID=2",
     "http://www.kearys.ie/web/dealerships/",
+    // Frank Keane Volkswagen
+    "http://fkvwliffeyvalley.ie/",
+    "http://fkvwliffeyvalley.ie/after_sales/request_service.aspx",
+    "http://fkvwliffeyvalley.ie/after_sales/request_finance.aspx",
+    "http://fkvwliffeyvalley.ie/after_sales/brochures.aspx",
 
     // SearchOptics - Ireland
     "http://en.searchoptics.com/contact",
