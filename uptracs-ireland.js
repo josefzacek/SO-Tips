@@ -75,6 +75,11 @@ function run(){
 
     // SearchOptics - Ireland
     "http://en.searchoptics.com/contact",
+    
+    // hello.yuko.ie
+    "http://hello.yuko.ie/50drivingcredit/",
+    "http://hello.yuko.ie/thankyou/",
+    
   ];
 
   var index = 0;
