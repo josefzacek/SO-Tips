@@ -117,6 +117,11 @@ function run(){
     "http://phdoyle.com/book-a-test-drive/",
     "http://phdoyle.com/book-a-service/",
     "http://phdoyle.com/request-a-brochure/",
+    
+    // Sean White Car Sales
+    "http://www.seanwhitecarsales.ie/",
+    "http://www.seanwhitecarsales.ie/contactus.php",
+    "http://www.seanwhitecarsales.ie/parts.php",
   ];
 
   var index = 0;
