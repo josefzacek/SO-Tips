@@ -136,6 +136,14 @@ function run(){
     "http://www.joemallonmotors.ie/web/brochure/",
     "http://www.joemallonmotors.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
     "http://www.joemallonmotors.ie/web/service/",
+    
+    // Highland Motors
+    "http://www.highlandrenault.com/home/",
+    "http://www.highlandrenault.com/contact-us/",
+    "http://www.highlandrenault.com/home/",
+    "http://www.highlandrenault.com/home/",
+    "http://dacia.highlandmotors.ie/",
+    "http://www.highlandrenault.com/home/",
   ];
 
   var index = 0;
