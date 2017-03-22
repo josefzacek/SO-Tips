@@ -123,6 +123,8 @@ function run(){
     "http://www.seanwhitecarsales.ie/",
     "http://www.seanwhitecarsales.ie/contactus.php",
     "http://www.seanwhitecarsales.ie/parts.php",
+    "https://www.dacia.ie/vehicles/dacia-range.html",
+    "https://www.renault.ie/vehicles/new-vehicles.html",
   ];
 
   var index = 0;
