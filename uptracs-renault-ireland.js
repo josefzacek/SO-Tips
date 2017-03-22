@@ -125,6 +125,17 @@ function run(){
     "http://www.seanwhitecarsales.ie/parts.php",
     "https://www.dacia.ie/vehicles/dacia-range.html",
     "https://www.renault.ie/vehicles/new-vehicles.html",
+    
+    // Joe Mallon Motors
+    "http://www.joemallonmotors.ie/contentv3/",
+    "http://www.joemallonmotors.ie/web/contact/",
+    "http://www.joemallonmotors.ie/web/request-call-back/",
+    "http://www.joemallonmotors.ie/web/book-a-test-drive/",
+    "http://www.joemallonmotors.ie/web/bookservice/",
+    "http://www.joemallonmotors.ie/web/trade-in/",
+    "http://www.joemallonmotors.ie/web/brochure/",
+    "http://www.joemallonmotors.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
+    "http://www.joemallonmotors.ie/web/service/",
   ];
 
   var index = 0;
