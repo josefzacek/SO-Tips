@@ -51,6 +51,7 @@ function run(){
     "http://www.bradleyrenault.ie/finance.php",
     "http://www.bradleyrenault.ie/servicing.php",
     "http://www.bradleyrenault.ie/promotions.php",
+    "http://www.bradleydacia.ie/",
     
     // Pobrien
     "http://www.pobrien.ie/contentv3/",
