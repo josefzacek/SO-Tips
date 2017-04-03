@@ -99,6 +99,7 @@ function run(){
   function nextTab() {
     window.open(url[index]);
     index = (index + 1) % url.length;
+    console.info(url[index]);
   }
 
   nextTab();
