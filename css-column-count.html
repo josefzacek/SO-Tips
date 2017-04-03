@@ -13,6 +13,9 @@
       -moz-column-count: 1; 
       column-count: 1;
     }
+    .non-breaking ul li {
+      break-inside: avoid-column;
+    }
     @media (min-width: 768px){
       .container.text, .container.list {
         -webkit-column-count: 2; 
