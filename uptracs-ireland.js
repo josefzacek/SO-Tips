@@ -26,6 +26,8 @@ function run(){
     "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23240&parentID=23238",
     "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23237&parentID=23216",
     "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23239&parentID=23238",
+    "http://rhmk.co/ex-demo-sale.ie",
+    "http://rhmk.co/frank-keane/ex-demo-sale-thank-you",
 
     // Frank Keane - Blackrock BMW
     "http://blackrock.frankkeanebmw.ie/contentv3/",
