@@ -51,6 +51,7 @@ function run(){
     "http://www.bradleyrenault.ie/finance.php",
     "http://www.bradleyrenault.ie/servicing.php",
     "http://www.bradleyrenault.ie/promotions.php",
+    "http://www.bradleydacia.ie/",
     
     // Pobrien
     "http://www.pobrien.ie/contentv3/",
@@ -117,6 +118,32 @@ function run(){
     "http://phdoyle.com/book-a-test-drive/",
     "http://phdoyle.com/book-a-service/",
     "http://phdoyle.com/request-a-brochure/",
+    
+    // Sean White Car Sales
+    "http://www.seanwhitecarsales.ie/",
+    "http://www.seanwhitecarsales.ie/contactus.php",
+    "http://www.seanwhitecarsales.ie/parts.php",
+    "https://www.dacia.ie/vehicles/dacia-range.html",
+    "https://www.renault.ie/vehicles/new-vehicles.html",
+    
+    // Joe Mallon Motors
+    "http://www.joemallonmotors.ie/contentv3/",
+    "http://www.joemallonmotors.ie/web/contact/",
+    "http://www.joemallonmotors.ie/web/request-call-back/",
+    "http://www.joemallonmotors.ie/web/book-a-test-drive/",
+    "http://www.joemallonmotors.ie/web/bookservice/",
+    "http://www.joemallonmotors.ie/web/trade-in/",
+    "http://www.joemallonmotors.ie/web/brochure/",
+    "http://www.joemallonmotors.ie/finance/index.cfm?fuseaction=applicationfrm&NetAmount=0",
+    "http://www.joemallonmotors.ie/web/service/",
+    
+    // Highland Motors
+    "http://www.highlandrenault.com/home/",
+    "http://www.highlandrenault.com/contact-us/",
+    "http://www.highlandrenault.com/home/",
+    "http://www.highlandrenault.com/home/",
+    "http://dacia.highlandmotors.ie/",
+    "http://www.highlandrenault.com/home/",
   ];
 
   var index = 0;
@@ -124,6 +151,7 @@ function run(){
   function nextTab() {
     window.open(url[index]);
     index = (index + 1) % url.length;
+    console.info(url[index]);
   }
 
   nextTab();

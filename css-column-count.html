@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Css Column Count</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    
+    .container.text, .container.list {
+      -webkit-column-count: 1; 
+      -moz-column-count: 1; 
+      column-count: 1;
+    }
+    .non-breaking ul li {
+      break-inside: avoid-column;
+    }
+    .non-breaking p {
+      break-inside: avoid-column;
+    }
+    @media (min-width: 768px){
+      .container.text, .container.list {
+        -webkit-column-count: 2; 
+        -moz-column-count: 2; 
+        column-count: 2;
+      }
+    }
+    @media (min-width: 992px){
+      .container.text, .container.list {
+        -webkit-column-count: 4; 
+        -moz-column-count: 4; 
+        column-count: 4;
+      }
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Css Column Count</h2>
+  </div>
+</div>
+
+<h2 class="text-center">Text (Breaking)</h2>
+<div class="container text">    
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ratione architecto expedita mollitia nobis</p>
+  
+  <p>saepe molestiae praesentium voluptas consectetur magnam, possimus unde soluta cum nisi alias nam, explicabo doloribus quos esse ab pariatur reprehenderit! Iure quas aliquid temporibus architecto maxime, nesciunt cum, laborum odio similique. Laborum ratione consectetur mollitia voluptatem eius fuga est ducimus expedita aliquid tempore, eos atque voluptatibus dolore, quasi reprehenderit</p>
+  
+  <p><b>rem assumenda eaque laudantium deleniti saepe, tempora voluptate maiores aliquam. Neque optio fuga modi blanditiis. Sequi ex consequuntur debitis voluptate excepturi provident odio dolorem, quo dolorum fuga similique et, eligendi autem culpa quasi reiciendis labore dicta atque quae! Possimus quia laudantium accusantium, quis! Magnam facilis illum, odit fugiat quo minus exercitationem tempora debitis neque, labore aliquid suscipit quis, error perferendis explicabo! Porro modi, aspernatur quod, dignissimos, repellendus expedita totam deleniti voluptatem explicabo molestias illum.</b></p>
+  
+  <p>Nostrum sit sapiente voluptates inventore illo at mollitia ducimus quae assumenda dolorum, error, sunt accusamus, nesciunt fugit! Consequatur quibusdam perspiciatis ipsam quis illum a officia cupiditate dolor saepe debitis consectetur tenetur, velit hic dolore suscipit sit labore adipisci molestiae, sequi. Inventore perferendis ut numquam nostrum eum explicabo animi sint tenetur laborum facere maiores repellat, vero asperiores reiciendis doloribus voluptatibus esse dicta autem velit culpa, similique fuga. Error saepe, corporis quo blanditiis laudantium aut atque eum, sit facilis provident eos magni nulla iure sed dolor labore minima neque ex eveniet voluptate maxime nam! Saepe laboriosam recusandae similique, ab, dolorem enim veritatis quidem expedita placeat omnis dolorum atque doloribus. Molestiae fuga corrupti officiis esse, molestias voluptate.</p>
+  
+  <p>Eum est eos eius quae voluptatum nostrum ex aperiam nihil tempora velit amet at cum dolore perspiciatis nobis, necessitatibus! Exercitationem autem perferendis dolores consequatur harum pariatur quam facere eaque impedit omnis natus culpa laudantium illo quo facilis, a velit earum ipsam, voluptatum optio! Esse, ex nisi rerum vel dolores autem voluptate praesentium hic omnis ut molestiae, magni numquam.</p>
+</div>
+
+<h2 class="text-center">Text (Non-Breaking)</h2>
+<div class="container text non-breaking">    
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ratione architecto expedita mollitia nobis</p>
+  
+  <p>saepe molestiae praesentium voluptas consectetur magnam, possimus unde soluta cum nisi alias nam, explicabo doloribus quos esse ab pariatur reprehenderit! Iure quas aliquid temporibus architecto maxime, nesciunt cum, laborum odio similique. Laborum ratione consectetur mollitia voluptatem eius fuga est ducimus expedita aliquid tempore, eos atque voluptatibus dolore, quasi reprehenderit</p>
+  
+  <p><b>rem assumenda eaque laudantium deleniti saepe, tempora voluptate maiores aliquam. Neque optio fuga modi blanditiis. Sequi ex consequuntur debitis voluptate excepturi provident odio dolorem, quo dolorum fuga similique et, eligendi autem culpa quasi reiciendis labore dicta atque quae! Possimus quia laudantium accusantium, quis! Magnam facilis illum, odit fugiat quo minus exercitationem tempora debitis neque, labore aliquid suscipit quis, error perferendis explicabo! Porro modi, aspernatur quod, dignissimos, repellendus expedita totam deleniti voluptatem explicabo molestias illum.</b></p>
+  
+  <p>Nostrum sit sapiente voluptates inventore illo at mollitia ducimus quae assumenda dolorum, error, sunt accusamus, nesciunt fugit! Consequatur quibusdam perspiciatis ipsam quis illum a officia cupiditate dolor saepe debitis consectetur tenetur, velit hic dolore suscipit sit labore adipisci molestiae, sequi. Inventore perferendis ut numquam nostrum eum explicabo animi sint tenetur laborum facere maiores repellat, vero asperiores reiciendis doloribus voluptatibus esse dicta autem velit culpa, similique fuga. Error saepe, corporis quo blanditiis laudantium aut atque eum, sit facilis provident eos magni nulla iure sed dolor labore minima neque ex eveniet voluptate maxime nam! Saepe laboriosam recusandae similique, ab, dolorem enim veritatis quidem expedita placeat omnis dolorum atque doloribus. Molestiae fuga corrupti officiis esse, molestias voluptate.</p>
+  
+  <p>Eum est eos eius quae voluptatum nostrum ex aperiam nihil tempora velit amet at cum dolore perspiciatis nobis, necessitatibus! Exercitationem autem perferendis dolores consequatur harum pariatur quam facere eaque impedit omnis natus culpa laudantium illo quo facilis, a velit earum ipsam, voluptatum optio! Esse, ex nisi rerum vel dolores autem voluptate praesentium hic omnis ut molestiae, magni numquam.</p>
+</div>
+
+<div class="container">
+<h2>CSS</h2>
+  
+  <pre>
+    <code>
+  .non-breaking p {
+    break-inside: avoid-column;
+  }    
+    </code>
+  </pre>
+</div>
+
+<h2 class="text-center">List (Breaking)</h2>
+<div class="container list">    
+  <ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>psum dolor sit amet, conse adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Lorem ipsor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, iure temporibus!</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Lorem ipsum dolor sit amet, conctetur adipisicing elit. Facere.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lom ipsum dolor sit amet, consectetur adipisicing elit. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lore9dwum ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum or sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, eligendi dolor sit amet, consectetur adipisicing dolor sit amet, consectetur adipisicing</b></li>
+    <li>Lorem ipbfsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, iure temporibus!</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsubfgvbm.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere.</li>
+    <li>Lorem ipdolor sit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipbvfvgbsum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Lorem ipsvgbfrgtfrum dolor sit amet, consectetur a. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>loremtg4rt3wtegh1</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsfrgvum dolor sit amet, consectetur adipisicing tgrtgelit.rfe42 Ipsum nulla repellat.</li>
+    <li>Lorem ipsum dolor snsectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipscfrhgrum dolorf3err sit amet.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, iure temporibus!</li>
+    <li>Lortgtrfgrem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum.</li>
+    <li>Logrfgrem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Ldolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Lorgbrftgem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem m dolor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipst amet, consectetur.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere.</li>
+    <li>Lorgrfgerem ipsum dosit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorgrtfegem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Loet, consectetur adipisicing elit. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorgrfgeem ipsum dolor sit amet.</li>
+    <li>lorem1</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Loredolor sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Loredolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lor5tgrem ipsum dolor sit amet, consectetur.</li>
+    <li>Logtrfrm dolor sit amet, consectetur adipisicing elit. Facere.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lor5r4t6sum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lortge3tgem ipsum dolor sit amet, consectetur.</li>
+    <li>Losum dolor sit amet, consectetur adipisicing elit. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lortgretgemsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>lorem1</li>
+    
+  </ul>
+</div>
+
+<h2 class="text-center">List(Non-Breaking)</h2>
+<div class="container list non-breaking">    
+  <ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>psum dolor sit amet, conse adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Lorem ipsor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, iure temporibus!</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Lorem ipsum dolor sit amet, conctetur adipisicing elit. Facere.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lom ipsum dolor sit amet, consectetur adipisicing elit. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lore9dwum ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum or sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, eligendi dolor sit amet, consectetur adipisicing dolor sit amet, consectetur adipisicing</b></li>
+    <li>Lorem ipbfsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, iure temporibus!</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsubfgvbm.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere.</li>
+    <li>Lorem ipdolor sit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipbvfvgbsum.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Lorem ipsvgbfrgtfrum dolor sit amet, consectetur a. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>loremtg4rt3wtegh1</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsfrgvum dolor sit amet, consectetur adipisicing tgrtgelit.rfe42 Ipsum nulla repellat.</li>
+    <li>Lorem ipsum dolor snsectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipscfrhgrum dolorf3err sit amet.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, iure temporibus!</li>
+    <li>Lortgtrfgrem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum.</li>
+    <li>Logrfgrem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Ldolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Lorgbrftgem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem m dolor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipst amet, consectetur.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere.</li>
+    <li>Lorgrfgerem ipsum dosit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lorgrtfegem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur.</li>
+    <li>Loet, consectetur adipisicing elit. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorgrfgeem ipsum dolor sit amet.</li>
+    <li>lorem1</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Loredolor sit amet, consectetur adipisicing elit. Ipsum nulla repellat.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, eligendi.</li>
+    <li>Loredolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lor5tgrem ipsum dolor sit amet, consectetur.</li>
+    <li>Logtrfrm dolor sit amet, consectetur adipisicing elit. Facere.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, maxime eveniet! Nostrum.</li>
+    <li>Lorem ipsum.</li>
+    <li>Lor5r4t6sum dolor sit amet, consectetur adipisicing elit. Deleniti.</li>
+    <li>Lortge3tgem ipsum dolor sit amet, consectetur.</li>
+    <li>Losum dolor sit amet, consectetur adipisicing elit. Maiores veritatis ducimus, saepe praesentium.</li>
+    <li>Lortgretgemsum dolor sit amet, consectetur adipisicing.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>lorem1</li>
+  </ul>
+</div>
+
+<div class="container">
+<h2>CSS</h2>
+  
+  <pre>
+    <code>
+  .non-breaking ul li {
+    break-inside: avoid-column;
+  }    
+    </code>
+  </pre>
+</div>
+<br>
+<br>
+
+
+<footer class="container-fluid">
+  <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+</footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
