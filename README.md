@@ -15,3 +15,5 @@
 - [https://josefzacek.github.io/SO-Tips/hide-top-part-of-iframe.html] (https://josefzacek.github.io/SO-Tips/hide-top-part-of-iframe.html)
 
 - [https://josefzacek.github.io/SO-Tips/add-overlay-image.html] (https://josefzacek.github.io/SO-Tips/add-overlay-image.html)
+
+- [https://josefzacek.github.io/SO-Tips/css-column-count.html] (https://josefzacek.github.io/SO-Tips/css-column-count.html)
