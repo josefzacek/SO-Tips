@@ -40,8 +40,8 @@ function run(){
     "http://www.sportifcars.co.uk/suzuki/used/request-a-test-drive.html",
     
     // UK hair Transplant clinic
-    "http://ukhairtransplantclinics.co.uk/",
-    "http://ukhairtransplantclinics.co.uk/london-hair-transplants/",
+    // "http://ukhairtransplantclinics.co.uk/",
+    // "http://ukhairtransplantclinics.co.uk/london-hair-transplants/",
     
     // SearchOptics - UK
     "http://en.searchoptics.com/",
