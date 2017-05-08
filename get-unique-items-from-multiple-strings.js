@@ -16,3 +16,8 @@ $.each(arrayOfItems, function(index, value){                                    
     uniqueItems.push(value);                                                                                                            // add value to uniqueItems array
   }   
 });
+
+var itemToRemove = '';                                                                                                                  // delare item to be removed
+result = $.grep(uniqueItems, function(index, value) {                                                                                   // grep(search) uniqueItems array 
+  return value != itemToRemove;                                                                                                         // return only values that are not matching itemToRemove
+});
