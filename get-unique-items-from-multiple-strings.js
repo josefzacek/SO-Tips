@@ -9,3 +9,10 @@ $("#panel-custom_field_3 .option .text-wrap").each(function(){                  
     arrayOfItems.push(element);                                                                                                         // push element to arrayOfItems array
   });
 });
+
+var uniqueItems = [];                                                                                                                   // declare uniqueItems array    
+$.each(arrayOfItems, function(index, value){                                                                                            // loop through arrayOfItems variable
+  if($.inArray(value, uniqueItems) === -1) {                                                                                            // if value is not in uniqueItems array
+    uniqueItems.push(value);                                                                                                            // add value to uniqueItems array
+  }   
+});
