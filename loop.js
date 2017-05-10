@@ -27,3 +27,18 @@ $(firstCarousel).find(".carousel > .carousel-inner > .item > img.img-responsive"
 // console.log(firstFour);
 // console.log(secondFour);
 // console.log(thirdFour);
+
+console.log('---')
+$(firstFour).each(function(index, value){
+  console.log("<img src='" + value + "' alt='" + imageAlt + "'>")
+})
+
+console.log('---')
+$(secondFour).each(function(index, value){
+  console.log("<img src='" + value + "' alt='" + imageAlt + "'>")
+})
+
+console.log('---')
+$(thirdFour).each(function(index, value){
+  console.log("<img src='" + value + "' alt='" + imageAlt + "'>")
+})
