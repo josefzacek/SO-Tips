@@ -2,6 +2,8 @@
 var firstFour = [];
 var secondFour = [];
 var thirdFour = [];
+// declare imageAlt variable
+var imageAlt = ''
 
 // get first carousel as source code shows 3
 var firstCarousel = $(".carousel-wrap").first();
