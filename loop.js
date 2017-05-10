@@ -11,7 +11,7 @@ var firstCarousel = $(".carousel-wrap").first();
 // loop through images and store them in arrays by 4
 $(firstCarousel).find(".carousel > .carousel-inner > .item > img.img-responsive").each(function(index){
   var imageSource = $(this).attr("src"); // get image source
-  console.log(imageSource); // debug only -> print all images in carousel
+  imageAlt = $(this).attr("alt"); // get alt text
   if (index < 4){
     firstFour.push(imageSource);
   }
