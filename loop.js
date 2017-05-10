@@ -24,6 +24,6 @@ $(firstCarousel).find(".carousel > .carousel-inner > .item > img.img-responsive"
 })
 
 // print arrays
-console.log(firstFour);
-console.log(secondFour);
-console.log(thirdFour);
+// console.log(firstFour);
+// console.log(secondFour);
+// console.log(thirdFour);
