@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap payment calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    /* remove margin and padding */
+    .nopadding {
+       padding: 0 !important;
+       margin: 0 !important;
+    }
+    /* span all buttons across div width */
+    label.btn.btn-primary {
+      width: 20%;
+    }
+    /* hide radio button */
+    label.btn-primary input {
+      display: none;
+    }
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Bootstrap payment calculator</h2>
+  </div>
+</div>
+  
+<div class="container-fluid">
+  <div class="col-lg-8 col-lg-offset-2 well">
+    <form id="form" class="form-horizontal">
+     
+      <div class="form-group">
+        <div class="col-sm-6">
+          <p>Purchase price</p>
+          <input id="purchase-price" class="form-control" type="text" placeholder="eg 10000">
+        </div>
+        <div class="col-sm-6">
+          <p>Loan Terms (months)</p>
+          <div class="btn-group col-xs-12 nopadding">
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="12">12
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="24">24
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="36">36
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="48">48
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="loan-terms" value="60">60
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="col-sm-6">
+          <p>APR</p>
+          <input id="loan-apr" class="form-control" type="text" placeholder="eg 6.99">
+        </div>
+        <div class="col-sm-6">
+          <p>Down payment</p>
+          <input id="down-payment" class="form-control" type="text" placeholder="eg 1000">
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="form-group">
+        <div class="col-md-6 col-md-offset-3">
+          <button class="btn-success btn btn-block btn-lg">Calculate</button>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+</div>
+<br>
+<br>
+
+<footer class="container-fluid">
+  <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+</footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
