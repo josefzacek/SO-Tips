@@ -20,6 +20,11 @@
     label.btn-primary input {
       display: none;
     }
+    /* make result price red*/
+    .result-price {
+      color: #ff0000;
+    }
+    
     /* Add a gray background color and some padding to the footer */
     footer {
       border-top: 1px solid #808080;
@@ -36,13 +41,13 @@
   </div>
 </div>
   
-<div class="container-fluid">
-  <div class="col-lg-8 col-lg-offset-2 well">
+<div class="container">
+  <div class="col-lg-6 col-lg-offset-3">
     <form id="form" class="form-horizontal">
      
       <div class="form-group">
         <div class="col-sm-6">
-          <p>Purchase price</p>
+          <p>Purchase price ($)</p>
           <input id="purchase-price" class="form-control" type="text" placeholder="eg 10000">
         </div>
         <div class="col-sm-6">
@@ -87,6 +92,7 @@
       </div>
       
     </form>
+    <p>Final price includes $458.50 license fees.</p>
   </div>
 </div>
 <br>
