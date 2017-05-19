@@ -7,6 +7,44 @@
   <link rel="shortcut icon" href="images/favicon.ico"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
+    #feedback-carousel {
+      background-color: #06d05b;padding: 20px 0;
+    }
+    #feedback-carousel .carousel-content {
+      color:#fff;
+      display:flex;
+      align-items:center;
+      text-align: center;
+      justify-content: center;
+      min-height: 350px;
+    }
+    #feedback-carousel .carousel-control .glyphicon-chevron-left{
+      font-size: 30px;
+      margin-left: -45%;
+    }
+    #feedback-carousel .carousel-control .glyphicon-chevron-right{
+      font-size: 30px;
+      margin-right: -45%;
+    }
+    #feedback-carousel .carousel-control.right {
+      background: none;
+    }
+    #feedback-carousel .carousel-control.left {
+      background: none;
+    }
+
+    @media(min-width: 992px){
+      #feedback-carousel .carousel-control .glyphicon-chevron-left{
+        margin-left: -5%;
+      }
+      #feedback-carousel .carousel-control .glyphicon-chevron-right{
+        margin-right: -5%;
+      }
+      #feedback-carousel .carousel-content {
+        min-height: 300px;
+      }
+    }
+    
     /* Add a gray background color and some padding to the footer */
     footer {
       border-top: 1px solid #808080;
