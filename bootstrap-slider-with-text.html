@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap payment calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    #feedback-carousel {
+      background-color: #06d05b;padding: 20px 0;
+    }
+    #feedback-carousel .carousel-content {
+      color:#fff;
+      display:flex;
+      align-items:center;
+      text-align: center;
+      justify-content: center;
+      min-height: 350px;
+    }
+    #feedback-carousel .carousel-control .glyphicon-chevron-left{
+      font-size: 30px;
+      margin-left: -45%;
+    }
+    #feedback-carousel .carousel-control .glyphicon-chevron-right{
+      font-size: 30px;
+      margin-right: -45%;
+    }
+    #feedback-carousel .carousel-control.right {
+      background: none;
+    }
+    #feedback-carousel .carousel-control.left {
+      background: none;
+    }
+
+    @media(min-width: 992px){
+      #feedback-carousel .carousel-control .glyphicon-chevron-left{
+        margin-left: -5%;
+      }
+      #feedback-carousel .carousel-control .glyphicon-chevron-right{
+        margin-right: -5%;
+      }
+      #feedback-carousel .carousel-content {
+        min-height: 300px;
+      }
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      border-top: 1px solid #808080;
+      padding: 15px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h2>Bootstrap slider with text</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="feedback-carousel" class="carousel slide" data-ride="carousel">
+      <div class="row">
+        <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="carousel-content">
+                <div>
+                  <h3>See What Our Customers Have to Say</h3>
+                  <p>As a small businessman, I have to get in and out of the Service bay fast. I use the Fleet Service for servicing my E-350 work van. The thing I love about these people in Fleet Service is that they, are in a word, Professional.<br> There is never any upselling, never any drama. and for the past few years, no mistakes. I see the same people working there year after year. That's a good sign.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-content">
+                <div>
+                  <h3>See What Our Customers Have to Say</h3>
+                  <p>As a small businessman, I have to get in and out of the Service bay fast. I use the Fleet Service for servicing my E-350 work van. The thing I love about these people in Fleet Service is that they, are in a word, Professional</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="carousel-content">
+                <div>                   
+                    <p>Created by Josef Zacek</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#feedback-carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#feedback-carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    
+    <h2>CSS</h2>
+    <pre>
+      <code>
+    #feedback-carousel {
+      background-color: #06d05b;padding: 20px 0;
+    }
+    #feedback-carousel .carousel-content {
+      color:#fff;
+      display:flex;
+      align-items:center;
+      text-align: center;
+      justify-content: center;
+      min-height: 350px;
+    }
+    #feedback-carousel .carousel-control .glyphicon-chevron-left{
+      font-size: 30px;
+      margin-left: -45%;
+    }
+    #feedback-carousel .carousel-control .glyphicon-chevron-right{
+      font-size: 30px;
+      margin-right: -45%;
+    }
+    #feedback-carousel .carousel-control.right {
+      background: none;
+    }
+    #feedback-carousel .carousel-control.left {
+      background: none;
+    }
+
+    @media(min-width: 992px){
+      #feedback-carousel .carousel-control .glyphicon-chevron-left{
+        margin-left: -5%;
+      }
+      #feedback-carousel .carousel-control .glyphicon-chevron-right{
+        margin-right: -5%;
+      }
+      #feedback-carousel .carousel-content {
+        min-height: 300px;
+      }
+    }
+      </code>
+    </pre>
+  </div>
+  <br>
+  <br>
+
+  <footer class="container-fluid">
+    <p><a href="http://josefzacek.com/">josefzacek.com</a></p>
+  </footer>
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
