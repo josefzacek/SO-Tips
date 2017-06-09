@@ -7,6 +7,20 @@
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>
+
+      .dataTables_length label{width: 100%;}
+      .dataTables_filter label{width: 100%;}
+      .dataTables_info{text-align:center;}
+      .dataTables_paginate{text-align:center;} 
+      
+
+      @media (min-width: 768px) {
+        .dataTables_length label{width: auto;}
+        .dataTables_filter{float: right;}
+        .dataTables_info{text-align:left;}
+        .dataTables_paginate{text-align:right;}
+      }
+
       /* Add a gray background color and some padding to the footer */
       footer {
         border-top: 1px solid #808080;
