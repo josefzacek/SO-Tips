@@ -17,3 +17,5 @@
 - [Add overlay image](https://josefzacek.github.io/SO-Tips/add-overlay-image.html)
 
 - [Css column count](https://josefzacek.github.io/SO-Tips/css-column-count.html)
+
+- [Data paginating table](https://josefzacek.github.io/SO-Tips/data-paginating-table.html)
