@@ -4,13 +4,13 @@ function run(){
 
   var url = [
     // JKB BMW
-    "http://www.jkcbmw.co.uk/",
-    "https://jkc.bmwretailerforms.co.uk/contact-us-form/?referrer=http://www.jkcbmw.co.uk/contact-us-form/",
-    "https://jkc.bmwretailerforms.co.uk/book-a-test-drive",
+    // "http://www.jkcbmw.co.uk/",
+    // "https://jkc.bmwretailerforms.co.uk/contact-us-form/?referrer=http://www.jkcbmw.co.uk/contact-us-form/",
+    // "https://jkc.bmwretailerforms.co.uk/book-a-test-drive",
 
     // JKC MINI
-    "http://www.jkcmini.co.uk/",
-    "http://www.jkcmini.co.uk/book-a-test-drive/",
+    // "http://www.jkcmini.co.uk/",
+    // "http://www.jkcmini.co.uk/book-a-test-drive/",
 
     // Montys of Sheffield
     "http://www.montysofsheffield.com/",
