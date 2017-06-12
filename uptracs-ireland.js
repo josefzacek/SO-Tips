@@ -21,23 +21,23 @@ function run(){
 //    "http://www.seat.ie/shopping-tools/finance-calculator.html",
 
     // Frank Keane
-    "http://www.frankkeane.ie/contentv3/",
-    "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23216",
-    "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23240&parentID=23238",
-    "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23237&parentID=23216",
-    "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23239&parentID=23238",
-    "http://rhmk.co/ex-demo-sale.ie",
-    "http://rhmk.co/frank-keane/ex-demo-sale-thank-you",
+    // "http://www.frankkeane.ie/contentv3/",
+    // "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23216",
+    // "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23240&parentID=23238",
+    // "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23237&parentID=23216",
+    // "http://www.frankkeane.ie/contentv3/index.cfm?fuseaction=page&pageID=23239&parentID=23238",
+    // "http://rhmk.co/ex-demo-sale.ie",
+    // "http://rhmk.co/frank-keane/ex-demo-sale-thank-you",
 
     // Frank Keane - Blackrock BMW
-    "http://blackrock.frankkeanebmw.ie/contentv3/",
-    "http://blackrock.frankkeanebmw.ie/web/contact-us/",
-    "http://blackrock.frankkeanebmw.ie/web/request-a-service/",
-    "http://blackrock.frankkeanebmw.ie/web/order-bmw-parts-/",
-    "http://blackrock.frankkeanebmw.ie/web/contact-us/",
+    // "http://blackrock.frankkeanebmw.ie/contentv3/",
+    // "http://blackrock.frankkeanebmw.ie/web/contact-us/",
+    // "http://blackrock.frankkeanebmw.ie/web/request-a-service/",
+    // "http://blackrock.frankkeanebmw.ie/web/order-bmw-parts-/",
+    // "http://blackrock.frankkeanebmw.ie/web/contact-us/",
 
     // Frank Keane - Naas Road BMW
-    "http://naasroad.frankkeanebmw.ie/web/contact-us/",
+    // "http://naasroad.frankkeanebmw.ie/web/contact-us/",
 
     // Kearys - BMW
     "http://www.kearysbmw.ie/contentv3/",
