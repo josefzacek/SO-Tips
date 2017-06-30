@@ -138,12 +138,11 @@ function run(){
     "http://www.joemallonmotors.ie/web/service/",
     
     // Highland Motors
-    "http://www.highlandrenault.com/home/",
-    "http://www.highlandrenault.com/contact-us/",
-    "http://www.highlandrenault.com/home/",
-    "http://www.highlandrenault.com/home/",
+    "http://www.highlandrenault.com/",
+    "http://www.highlandrenault.com/contactus.php",
+    "http://www.highlandrenault.com/book-test-drive.php",
+    "http://www.highlandrenault.com/finance.php",
     "http://dacia.highlandmotors.ie/",
-    "http://www.highlandrenault.com/home/",
   ];
 
   var index = 0;
