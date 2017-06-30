@@ -143,6 +143,13 @@ function run(){
     "http://www.highlandrenault.com/book-test-drive.php",
     "http://www.highlandrenault.com/finance.php",
     "http://dacia.highlandmotors.ie/",
+
+    // Deerpark motors
+    "http://deerparkmotors.ie/",
+    "http://deerparkmotors.ie/book-a-test-drive/",
+    "http://deerparkmotors.ie/contact-us/",
+    "http://deerparkmotors.ie/book-a-service/",
+    "http://deerparkmotors.ie/dacia/",
   ];
 
   var index = 0;
