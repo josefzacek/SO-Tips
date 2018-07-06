@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+      .iframed-video-holder {
+        position: relative;
+        padding-top: 65.25%;
+      }
+
+      .iframed-video-holder>iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div style="position:relative;padding-top:65.25%;">
+      <iframe src="https://mediaexchange.accenture.com/embed/secure/iframe/entryId/1_z1pgq6x6/uiConfId/27188232" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+
+  </body>
+
+</html>
